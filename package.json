@@ -1,0 +1,34 @@
+{
+  "name": "apiusers",
+  "version": "1.0.0",
+  "description": "O objetivo deste projeto é aplicar novos conhecimentos em TypeScript, debugging com VS Code e testes no Node.js utilizando Jest. Além disso, o projeto fará uso do Passport para autenticação, JWT para gerenciamento de tokens, Sequelize como ORM, e PostgreSQL para conectar a API ao banco de dados e garantir a persistência das informações.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.0.1",
+    "express": "^4.21.2",
+    "express-validation": "^4.1.1",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.2",
+    "prisma": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  }
+}
