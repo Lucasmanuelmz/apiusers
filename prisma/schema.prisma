@@ -57,9 +57,9 @@ model Certificate {
 
 model User {
   id Int @id @default(autoincrement())
-  username String @unique @db.VarChar(30)
-  firstName String?
-  lastName String?
+  username String @unique @db.VarChar(100)
+  firstName String @db.VarChar(100)
+  lastName String @db.VarChar(100)
   email String @unique
   password String @db.VarChar(100)
   phoneNumber String @db.VarChar(13)
