@@ -8,3 +8,4 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use(express_1.default.static('public'));
 app.listen(3000, () => console.log('servidor iniciado com sucesso'));
+//# sourceMappingURL=app.js.map

@@ -14,9 +14,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.creatingNewUserInDatabase = void 0;
 const client_1 = __importDefault(require("../prisma/client"));
+const express_validator_1 = require("express-validator");
 const creatingNewUserInDatabase = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const { __username, __firstName, __lastName, __email, __phoneNumber, __password, } = req.body;
     try {
+        const errors = (0, express_validator_1.validationResult)(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
+        }
         yield client_1.default.user.create({
             data: {
                 username: __username,
@@ -36,3 +41,4 @@ const creatingNewUserInDatabase = (req, res, next) => __awaiter(void 0, void 0, 
     }
 });
 exports.creatingNewUserInDatabase = creatingNewUserInDatabase;
+//# sourceMappingURL=userControllers.js.map

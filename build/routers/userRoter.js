@@ -42,3 +42,4 @@ const userController = __importStar(require("../controllers/userControllers"));
 const validationWhenCreateUser_1 = require("../validators/validationWhenCreateUser");
 exports.userRoutes = express_1.default.Router();
 exports.userRoutes.post('signup', validationWhenCreateUser_1.validationWhenCreatingNewUser, userController.creatingNewUserInDatabase);
+//# sourceMappingURL=userRoter.js.map

@@ -1,0 +1,1 @@
+{"root":["../app.ts","../controllers/userControllers.ts","../prisma/client.ts","../routers/userRoter.ts","../validators/validationWhenCreateUser.ts"],"errors":true,"version":"5.7.2"}

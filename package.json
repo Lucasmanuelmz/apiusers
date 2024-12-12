@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "O objetivo deste projeto é aplicar novos conhecimentos em TypeScript, debugging com VS Code e testes no Node.js utilizando Jest. Além disso, o projeto fará uso do Passport para autenticação, JWT para gerenciamento de tokens, Sequelize como ORM, e PostgreSQL para conectar a API ao banco de dados e garantir a persistência das informações.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "start": "node build/app.js",
@@ -14,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^6.0.1",
-    "express-validation": "^4.1.1",
     "express-validator": "^7.2.0",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1"
@@ -22,7 +20,6 @@
   "devDependencies": {
     "@eslint/js": "^9.16.0",
     "@types/express": "^5.0.0",
-    "@types/express-validator": "^2.20.33",
     "@types/node": "^22.10.2",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",

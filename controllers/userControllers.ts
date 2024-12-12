@@ -1,6 +1,6 @@
 import prisma from "../prisma/client";
 import { Request, Response, NextFunction } from "express";
-import { validationResult } from "express-validator";
+import {validationResult} from 'express-validator';
 
 interface UserData {
   __username: string;
@@ -28,7 +28,7 @@ export const creatingNewUserInDatabase = async(
   try {
     const errors = validationResult(req);
     if(!errors.isEmpty()) {
-      return res.status(400).json({errors: errors.Array()})
+      return res.status(400).json({errors: errors.array()})
     }
     
     await prisma.user.create({
